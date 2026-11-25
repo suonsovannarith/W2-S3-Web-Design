@@ -1,0 +1,44 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+header, footer {
+    background-color: blue;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 5px 0 darkblue;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+}
+
+.left-side{
+    background-color: aqua;
+    flex-grow: 1;
+}
+
+.right-side{
+    background-color: brown;
+    width: 300px;
+}
+
+.box-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.box{
+    background-color: chartreuse;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 5px 0  darkgreen;
+}
