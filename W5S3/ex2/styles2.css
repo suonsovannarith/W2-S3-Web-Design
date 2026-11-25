@@ -1,0 +1,62 @@
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 18px 32px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px  ;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+/* Hide checkbox and hamburger icon on desktop */
+.menu-toggle,
+.bar {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .bar {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 70%;
+        width: 17%;
+        background-color: #4e4747;
+        border-top: 1px solid #3f3f3f;
+        padding: 16px 32px;
+    }
+
+    /* Show dropdown menu when the hamburger label is clicked */
+    .menu-toggle:checked~.nav-links {
+        display: flex;
+    }
+}
